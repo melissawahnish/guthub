@@ -1,13 +1,10 @@
 Guthub::Application.routes.draw do
-  resources :users
-
-
   resources :dishes
 
 
   resources :meals
 
-  
+  get "/:id/:id2" => "hello#add"
 
 
   # The priority is based upon order of creation:

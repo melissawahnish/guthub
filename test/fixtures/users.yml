@@ -2,8 +2,8 @@
 
 one:
   name: MyString
-  rating: 1
+  age: 1
 
 two:
   name: MyString
-  rating: 1
+  age: 1
