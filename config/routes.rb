@@ -1,10 +1,17 @@
 Guthub::Application.routes.draw do
+ 
+  resources :users
   resources :dishes
 
 
   resources :meals
 
-  get "/:id/:id2" => "hello#add"
+  resources :meal do
+    member do
+      get "dish"
+    end
+  end
+
 
 
   # The priority is based upon order of creation:
@@ -56,7 +63,7 @@ Guthub::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'hello#index'
+  root :to => 'meals#index'
 
   # See how all your routes lay out with "rake routes"
 
